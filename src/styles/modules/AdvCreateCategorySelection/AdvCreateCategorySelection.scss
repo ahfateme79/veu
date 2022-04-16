@@ -1,0 +1,63 @@
+@import "src/styles/mixins/mixins";
+  .header{
+    border-bottom: 0.3px solid #bfc0c2;
+    padding: 0;
+    padding-bottom: 12px;
+    margin-bottom: 34px;
+    span:last-of-type{
+      font-size: 16px;
+      color: #4c4d4e;
+    }
+  }
+  .AdvCategorySelection{
+    font-family: iranyekan, serif;
+    direction: rtl;
+    margin: 0 100px;
+    @include sectionBoxStyle;
+    padding: 26px 24px 152px 24px;
+    @media (max-width:767px){
+      margin: 0 16px;
+      padding: 14px 16px 56px 16px;
+    }
+    .categories{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      column-gap: 24px;
+      margin-top: 61px;
+      .category{
+        width: 190px;
+        height: 190px;
+        border-radius: 16px;
+        background: #fff;
+        border: 0.5px solid #a8a9ab;
+        cursor: pointer;
+        @media (max-width: 767px){
+          width: 102px;
+          height: 102px;
+        }
+      }
+
+    }
+  }
+  .adv-create{
+    @include sectionBoxStyle;
+    padding: 26px 24px 152px 24px;
+    @media (max-width:767px){
+      padding: 14px 16px 56px 16px;
+    }
+    .HerbalAdviceText {
+      font-weight: normal;
+      font-size: 14px;
+      color: #4c4d4e;
+      margin: 12px 0;
+
+    }
+
+    .HerbalAdviceSubText {
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 22px;
+      color: #a8a9ab;
+      margin-bottom: 60px;
+    }
+  }

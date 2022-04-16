@@ -1,0 +1,9 @@
+@import "../../mixins/mixins";
+
+.back-to-first {
+  font-size: 12px;
+  @include fontNormal;
+  color: #a8a9ab;
+  text-decoration: none;
+}
+

@@ -1,0 +1,79 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px;
+  row-gap: 24px;
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+}
+
+.Subscription {
+  padding: 42px;
+  border-radius: 20px;
+  background-color: #fff;
+  margin-bottom: 24px;
+
+  SubscriptionOption {
+    font-size: 16px;
+    color: #4c4d4e;
+
+  }
+
+  .SubscriptionTitle {
+    font-weight: 500;
+    font-size: 16px;
+    color: #4c4d4e;
+    margin-bottom: 15px;
+  }
+
+  .SubscriptionText {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #a8a9ab;
+
+  }
+}
+
+.SubscriptionList {
+  padding: 26px 24px 140px 24px;
+  border-radius: 20px;
+  background-color: #fff;
+  direction: rtl;
+
+  .SubscriptionText {
+    font-size: 16px;
+    text-align: right;
+    color: #4c4d4e;
+    margin-bottom: 17px;
+  }
+
+  .SubscriptionOptions {
+    border-radius: 12px;
+    background: #fff;
+    border: 1px solid #e5e8ec;
+    padding: 14px;
+    margin-top: 32px;
+
+    .SubscriptionListTitle {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: #4c4d4e;
+    }
+
+    .SubscriptionListButton {
+      color: white;
+      border-radius: 8px;
+      background: #29bb89;
+      padding: 11px 85px;
+    }
+
+    .SubscriptionListPrice {
+      margin-bottom: 35px;
+
+    }
+  }
+
+}

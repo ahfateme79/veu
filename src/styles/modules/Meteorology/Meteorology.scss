@@ -1,0 +1,133 @@
+@import "src/styles/mixins/mixins";
+
+.background-on-mobile {
+  @media (max-width: 767px) {
+    background: url("../assets/icon/weatherBackOnMobile.png") no-repeat;
+    background-size: cover;
+    margin-top: -16px;
+    padding: 48px 0px 0px 0px;
+
+  }
+}
+
+.swiper-background-on-mobile {
+  @media (max-width: 767px) {
+    background-color: #91D6F1;
+    padding: 4px 16px;
+  }
+}
+
+.meteorology {
+  @include sectionBoxStyle;
+  padding: 38px 0px 19px 0px;
+  background: url("../assets/icon/weather.png") no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  @media (max-width: 767px) {
+    background: unset;
+    padding: 0px;
+    margin-top: 42px;
+  }
+
+  .meteorology-week {
+    direction: rtl;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    padding: 4px 16px;
+    cursor: pointer;
+    margin-bottom: 32px;
+  }
+
+  .week {
+    padding: 14px 37px;
+    cursor: pointer;
+    @media (max-width: 767px) {
+      padding: 10px;
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+
+  .activeWeek {
+    border-radius: 8px;
+    border: solid 0.6px #29bb89;
+    background-color: #29bb89;
+    color: #fff;
+  }
+
+  .weather {
+    color: #fff;
+    @include fontNormal;
+    @media (max-width: 767px) {
+      background: unset;
+      padding: 0;
+    }
+
+    .date {
+      margin-bottom: 29px;
+      color: #fff !important;
+    }
+
+    .weather-text {
+      @include fontNormal;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .weather-title {
+      font-size: 18px;
+      margin-bottom: 16px;
+      @include fontNormal;
+      color: #fff;
+    }
+
+    .weather-title-number {
+      font-size: 18px;
+      margin-bottom: 73px;
+      @media (max-width: 767px) {
+        margin-bottom: 98px;
+      }
+    }
+
+    .weather-big-icon {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 18px;
+    }
+
+    .weather-icon {
+      width: 26.1px;
+      height: 21.1px;
+      padding: 0;
+    }
+  }
+
+  .precipitation-text {
+    direction: rtl;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 6px;
+
+  }
+  .temp-max-min{
+    width: 164px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 9px 24px;
+    margin-bottom: 40px;
+  }
+  .hourly-item{
+    border-bottom: 0.5px solid #fff;
+    padding: 20px 70px;
+    &:last-of-type{
+      border-bottom: unset;
+    }
+    @media (max-width: 767px){
+      padding: 20px 12px;
+    }
+  }
+  .day-temp{
+    font-size: 48px;
+  }
+}

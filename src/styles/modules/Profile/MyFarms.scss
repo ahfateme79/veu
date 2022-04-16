@@ -1,0 +1,122 @@
+.MyFarms {
+  padding: 24px 24px 65px;
+  border-radius: 20px;
+  background-color: #fff;
+  @media (max-width: 767px) {
+    margin-bottom: 24px;
+  }
+  .border-bottom {
+    padding-bottom: 17px;
+    margin-bottom: 40px;
+    @media (max-width: 767px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .margin-top-40 {
+    margin-top: 40px;
+    @media (max-width: 767px) {
+      margin-top: 29px;
+    }
+  }
+
+  .pointer {
+    cursor: pointer;
+  }
+
+  .show-service {
+    font-size: 12px;
+    color: #7fd2bc;
+    padding: 0;
+    margin: 0 !important;
+  }
+
+  .MyFarmsTitle {
+    font-weight: 500;
+    font-size: 16px;
+    color: #4c4d4e;
+
+  }
+
+  .edit-farm-txt {
+    font-size: 14px;
+    color: #7fd2bc;
+  }
+
+  .edit-farm-icon, .delete-farm-icon {
+    margin-left: 3px;
+  }
+
+  .delete-farm-txt {
+    font-size: 14px;
+    color: #d27f85;
+    margin-left: 32px;
+  }
+
+  .MyFarmsPlant {
+    font-weight: 500;
+    font-size: 16px;
+    color: #4c4d4e;
+    margin: 24px 0;
+
+  }
+
+  .MyFarm {
+    border-radius: 16px;
+    background: transparent;
+    border: 0.5px solid #d7d8d9;
+    padding: 18px 24px 39px 24px;
+    @media (max-width: 767px) {
+      padding: 10px 12px 25px 12px;
+    }
+
+    .MyFarmsListTitle {
+      font-weight: 500;
+      font-size: 16px;
+      color: #4c4d4e;
+      cursor: pointer;
+
+    }
+
+    .MyFarmsListText {
+      font-size: 14px;
+      color: #919294;
+      margin-bottom: 12px;
+      @media (max-width: 767px) {
+        margin-bottom: 10px;
+      }
+
+      .MyFarmsListTextIcon {
+        margin-left: 9px;
+      }
+    }
+
+    .MyFarmsListValue {
+      font-size: 12px;
+      color: #4c4d4e;
+      border-radius: 6px;
+      background: #f5f6f8;
+      padding: 10px;
+      width: 138px;
+      height: 40px;
+      @media (max-width: 767px) {
+        width: 94px;
+        height: 32px;
+      }
+    }
+
+  }
+
+  .AddNewFarmButton {
+    border-radius: 8px;
+    background: #29bb89;
+    padding: 16px;
+    font-size: 16px;
+    color: #fff;
+    color: white;
+    margin-top: 90px;
+    @media (max-width: 767px) {
+      margin-top: 56px;
+    }
+  }
+}

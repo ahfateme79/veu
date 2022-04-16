@@ -1,0 +1,58 @@
+@import "../../mixins/mixins";
+
+.system-icon-image {
+  background-image: url("../../assets/icon/SystemIcon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0 0 0 8px;
+  width: 64px;
+  height: 64px;
+}
+
+.offcanvas-header {
+  padding: 0px 8px;
+  border-bottom: 0.3px solid #bfc0c2;
+  height: 74px;
+  margin-bottom: 36px;
+}
+
+.offcanvas-body {
+  padding: 0 8px;
+}
+
+.mobile-icon {
+  margin-left: 12px;
+}
+
+.navbar-toggler {
+  margin-left: 24px;
+}
+
+.system-icon-title {;
+  font-weight: normal;
+  font-size: 22px;
+  text-align: right;
+  color: #4d7017;
+  font-family: iranyekan, serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  float: right;
+}
+
+.system-icon-description {
+  height: 28px;
+  margin: 0 auto;
+  display: table;
+  font-family: iranyekan, serif;
+  font-size: 12px;
+  @include fontNormal;
+  color: #4d7017;
+}
+
+.offcanvas-end {
+  width: 350px;
+  padding: 0 16px;
+}

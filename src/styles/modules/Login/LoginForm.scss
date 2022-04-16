@@ -1,0 +1,33 @@
+@import "../../mixins/mixins";
+
+.login-form {
+  padding: 26px 24px 69px 24px;
+  border-radius: 20px;
+  background-color: #fff;
+  @media (max-width: 767px) {
+    margin-top: 25px;
+  }
+
+  .login-form-text-input {
+    @include textFormInput;
+    padding: 5px;
+    margin-bottom: 8px;
+  }
+
+  .login-form-submit-button {
+    @include submitButton;
+    margin: 0;
+    margin-top: 56px;
+    margin-bottom: 32px;
+  }
+
+  .theRules {
+    font-size: 12px;
+    color: #4c4d4e;
+
+    span {
+      color: #29bb89;
+    }
+  }
+
+}

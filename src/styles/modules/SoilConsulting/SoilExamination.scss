@@ -1,0 +1,252 @@
+@import "src/styles/mixins/mixins";
+
+.soil-examination {
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  font-family: iranyekan, serif;
+  margin-top: 50px;
+  min-height: 280px;
+
+  .pointer {
+    cursor: pointer;
+  }
+
+  .mb-31 {
+    margin-bottom: 31px;
+  }
+
+  .unit {
+    font-size: 12px;
+    color: #37393b;
+  }
+
+  .price {
+    font-size: 16px;
+    color: #37393b;
+  }
+
+  .soil-examination-empty-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    color: #4c4d4e;
+    margin-bottom: 15px;
+  }
+
+  .soil-examination-empty-description {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    color: #a8a9ab;
+    margin-bottom: 60px;
+  }
+
+  .soil-examination-empty-button {
+    padding: 14px 36px 14px 35px;
+    border-radius: 8px;
+    background-color: #29bb89;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    color: #fff;
+    margin-top: 101px;
+  }
+
+  .soil-examination-request-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    color: #4c4d4e;
+  }
+
+  .soil-examination-back {
+    font-size: 12px;
+    @include fontNormal;
+    color: #7fd2bc;
+    cursor: pointer;
+  }
+
+  .soil-examination-price {
+    padding: 20px 13px;
+    border-radius: 16px;
+    border: solid 1px #e8ebef;
+  }
+
+  .soil-examination-price-title {
+    font-size: 14px;
+    @include fontNormal;
+    text-align: right;
+    color: #4c4d4e;
+  }
+
+  .soil-examination-textarea {
+    resize: none;
+    padding: 10px;
+    height: 171px;
+    border-radius: 16px;
+    border: solid 1px #f3f3f3;
+    background-color: #f5f6f8;
+  }
+
+  .soil-examination-privacy {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.83;
+    text-align: right;
+    color: #4c4d4e;
+    margin-top: 45px;
+    margin-bottom: 37px;
+
+    .soil-examination-privacy-box {
+      color: #29bb89;
+    }
+  }
+
+  .soil-examination-success-image {
+    background-image: url("../../assets/icon/success.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .soil-examination-in-process-image {
+    margin-bottom: 50px;
+  }
+
+  .back-to-soil-consulting {
+    padding: 30px 23px;
+    border-radius: 8px;
+    border: 1px solid #e5e8ec;
+
+    .link {
+      font-size: 14px;
+      color: #29bb89;
+    }
+
+    .message {
+      font-size: 14px;
+      color: #4c4d4e;
+    }
+
+  }
+
+  .soil-examination-reRequest {
+    width: 220px;
+    height: 56px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid #29bb89;
+    font-size: 14px;
+    color: #29bb89;
+    padding: 18px 10px;
+    margin-top: 64px;
+  }
+}
+
+.HerbalAdviceText {
+  font-weight: normal;
+  font-size: 14px;
+  color: #4c4d4e;
+  margin: 12px 0;
+
+}
+
+.HerbalAdviceSubText {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  color: #a8a9ab;
+  margin-bottom: 60px;
+}
+
+.privacy {
+  font-family: iranyekan, serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #4c4d4e;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  margin: 24px 0;
+
+  .privacy-text {
+    color: #29bb89;
+    cursor: pointer;
+  }
+}
+
+.HerbalAdviceSubmit {
+  padding: 12px 24.3px 11px 24px;
+  border-radius: 8px;
+  background-color: #29bb89;
+  color: #fff;
+
+
+}
+
+.HerbalAdvice-textarea {
+  resize: none;
+  padding: 10px;
+  height: 171px;
+  border-radius: 16px;
+  border: solid 1px #f3f3f3;
+  background-color: #f5f6f8;
+}
+
+.HerbalAdviceTitle {
+  font-weight: 500;
+  font-size: 16px;
+  color: #4c4d4e;
+  margin-bottom: 15px;
+
+}
+
+.HerbalAdviceImageInput {
+  width: 110px;
+  height: 110px;
+  border-radius: 16px;
+  background: #f5f6f8;
+  border: 1px solid #f3f3f3;
+
+}
+
+.preview {
+  width: 110px;
+  height: 110px;
+  border-radius: 8px;
+  @media (max-width:767px){
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.cameraIcon {
+  background-image: url("../../assets/icon/Camera.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+.iconAddPic {
+  padding: 20px;
+  border-radius: 16px;
+  background: #f5f6f8;
+  border: 1px solid #f3f3f3;
+
+  .iconAddPicText {
+    font-weight: normal;
+    font-size: 14px;
+    color: #a8a9ab;
+    padding-top: 16px;
+
+  }
+
+}

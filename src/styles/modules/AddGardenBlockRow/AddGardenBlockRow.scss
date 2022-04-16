@@ -1,0 +1,51 @@
+@import "src/styles/mixins/mixins";
+
+.add-garden-block-row {
+  @include sectionBoxStyle;
+  padding: 24px 24px 41px 24px;
+  font-family: iranyekan, serif;
+  margin-bottom: 97px;
+  direction: rtl;
+  .form-info-show{
+    width: 834px;
+    height: 100px;
+    border-radius: 16px;
+    background: transparent;
+    border: 0.6px solid #d7d8d9;
+    padding: 34px 24px 32px 24px;
+    margin: 0 auto;
+  }
+  .select-input{
+    margin-top: 12px;
+    .multiselect__single{
+      text-align: right;
+    }
+  }
+
+  .form-info-show-item{
+    .farm-title{
+      font-size: 12px;
+    }
+    .farm-value{
+      margin-top: 10px;
+      background-color: #cecece;
+      color: #fff;
+      display: block;
+      width: 100px;
+      text-align: center;
+      border-radius: 5px;
+      font-size: 12px;
+      padding: 5px 0;
+    }
+  }
+  .map-tools{
+    top: 45px;
+    right: 0px;
+    .form-background {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 18px;
+    }
+  }
+
+}

@@ -1,0 +1,130 @@
+@import "src/styles/mixins/mixins";
+
+.header-layout {
+  border-radius: 16px;
+  background: #fff;
+
+  .gapClass {
+    gap: 30px;
+  }
+
+  .dropdown-menu {
+    padding: 26px 24px 37px 24px;
+    width: 293px;
+    height: 465px;
+    //border: 1px solid #919294;
+    border-radius: 15px;
+
+    .dropdown-item {
+      padding: 0;
+      margin-bottom: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      //&:last-of-type{
+      //  margin-bottom: 0;
+      //}
+      &:hover {
+        background-color: unset;
+      }
+
+      .dropdown-item-icon {
+        margin-left: 16px;
+      }
+    }
+
+    .border-bottom-item {
+      border-bottom: 0.3px solid #bfc0c2;
+      margin-bottom: 26px;
+    }
+  }
+
+  .dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .header-layout-user-name {
+    font-family: IRANYekan, serif;
+    font-size: 14px;
+    @include fontNormal;
+    color: #4c4d4e;
+    @include pointerClass;
+  }
+
+  .dropdown-toggle::after {
+    vertical-align: unset;
+    margin-right: 4px
+  }
+
+  .notificationIcon {
+    background-image: url("../assets/icon/Notification.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    @include pointerClass;
+  }
+
+  .BuyIcon {
+    background-image: url("../assets/icon/Buy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    @include pointerClass;
+  }
+
+  .ProfileAvatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    background: #e8e8e8;
+    @include pointerClass;
+  }
+
+  .number-notification {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7fd2bc;
+    color: white;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    padding: 3px;
+    font-size: 11px;
+    @include pointerClass;
+  }
+
+  .paddingLeft {
+    padding-left: 100px;
+  }
+
+  .dropdownProfile {
+    font-weight: 500;
+    font-size: 16px;
+    color: #151617;
+    @include pointerClass;
+  }
+}
+
+@media (max-width: 576px) {
+  .marginRight {
+    margin-right: 80px;
+  }
+  .header-layout {
+    border-radius: 0;
+  }
+  .dropdown-backdrop {
+    position: static !important;
+  }
+  .gapClass {
+    gap: 12px;
+  }
+
+}

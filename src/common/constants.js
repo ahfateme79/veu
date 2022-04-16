@@ -1,0 +1,2 @@
+export const mapSourceUrl = 'https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=S0q05ibq4Hq6XnWLr3TA';
+export const bingMapKey= 'Ar17trnP4o8TfczFw7JtW6pa25KXPz_6iDpenyNHc9fBK_SIH0m3Ixd1t4IMiAOK' 

@@ -1,0 +1,159 @@
+.FarmInformation {
+  padding: 24px 24px 65px;
+  border-radius: 20px;
+  background-color: #fff;
+  @media (max-width: 767px) {
+    margin-bottom: 190px !important;
+    padding: 14px 16px 64px 16px;
+  }
+
+  .FarmInformationListTitle {
+    font-size: 16px;
+    color: #4c4d4e;
+
+  }
+
+  .edit-farm-txt {
+    font-size: 14px;
+    color: #7fd2bc;
+  }
+
+  .delete-farm-txt {
+    font-size: 14px;
+    color: #D27F85;
+    margin-left: 32px;
+    cursor: pointer;
+  }
+
+  .edit-farm-icon, .delete-farm-icon {
+    margin-left: 3px;
+  }
+
+  .delete-farm-txt {
+    font-size: 14px;
+    color: #d27f85;
+    margin-left: 32px;
+  }
+
+  .empty-plants {
+    min-height: 200px;
+  }
+
+  .margin-bottom-40 {
+    margin-bottom: 40px;
+  }
+
+  .padding-bottom-17 {
+    padding-bottom: 17px;
+    margin-bottom: 24px;
+    @media (max-width: 767px) {
+      padding-bottom: 13px;
+      margin-bottom: 18px;
+    }
+  }
+
+  .add-all-of-Plants {
+    border-radius: 8px;
+    background: #29bb89;
+    padding: 16px 58px;
+    color: #FFFFFF;
+    border: none;
+    margin-right: 48px;
+  }
+
+  .FarmInformationList {
+    margin-bottom: 90px;
+
+    .FarmInformation-card {
+      border-radius: 16px;
+      border: 0.6px solid #d7d8d9;
+      padding: 18px 24px 39px 24px;
+      margin-bottom: 24px;
+      @media (max-width: 767px) {
+        margin-bottom: 16px !important;
+        padding: 10px 12px 25px 12px;
+      }
+    }
+  }
+
+  .FarmInformationList.row {
+    @media (max-width: 767px) {
+      margin: 0;
+      margin-bottom: 48px;
+    }
+  }
+
+  .FarmInformationTextIcon {
+    margin-left: 6px;
+  }
+
+  .FarmInformationTitle {
+    font-size: 16px;
+    color: #4c4d4e;
+    cursor: pointer;
+
+  }
+
+  .FarmInformationText {
+    font-size: 14px;
+    color: #919294;
+    margin-bottom: 12px;
+  }
+
+  .FarmInformationValue {
+    font-size: 12px;
+    color: #4c4d4e;
+    border-radius: 6px;
+    padding: 10px;
+    background: #f8f9fb;
+    width: 138px;
+    height: 40px;
+    @media (max-width: 767px) {
+      width: 94px;
+      height: 32px;
+      padding: 7px;
+    }
+  }
+
+  .FarmInformationTitle {
+    font-size: 16px;
+    color: #4c4d4e;
+  }
+
+  .FarmInformationSubTitle {
+    font-size: 14px;
+    color: #919294;
+  }
+
+  .FarmInformationLink {
+    font-size: 14px;
+    color: #7fd2bc;
+  }
+
+  .FarmInformationPlant {
+    font-size: 16px;
+    color: #4c4d4e;
+    text-align: right;
+  }
+
+  .AddNewPlantButton {
+    cursor: pointer;
+    font-size: 14px;
+    font-size: 16px;
+    color: #7FD2BC;
+    margin-left: 48px;
+  }
+
+  .final-btn {
+    width: 180px;
+    height: 56px;
+    border-radius: 8px;
+    background: #29bb89;
+    color: #fff;
+    cursor: pointer;
+    @media (max-width:767px){
+      width: 120px;
+    }
+  }
+}
+

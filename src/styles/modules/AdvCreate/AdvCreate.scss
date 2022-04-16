@@ -1,0 +1,189 @@
+@import "src/styles/mixins/mixins";
+
+.avd-create {
+  font-family: iranyekan, serif;
+  direction: rtl;
+  margin: 0 auto;
+  @include sectionBoxStyle;
+  padding: 26px 24px 152px 24px;
+  width: 560px;
+  min-height: 1147px;
+  @media (max-width: 767px) {
+    padding: 14px 16px 87px 16px;
+    margin: 0 16px 115px 16px;
+    width: unset;
+  }
+  .preview {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 8px;
+    padding: 0 !important;
+    @media (max-width:767px){
+      width: 80px;
+      height: 80px;
+    }
+    img{
+      border-radius: 8px;
+    }
+  }
+  .img-delete-btn {
+    background-color: #D27F85;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    width: 110px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-top: -28px;
+    @media (max-width: 767px){
+      width: 80px;
+    }
+  }
+  .multiselect {
+    width: 100% !important;
+  }
+  .multiselect__single{
+    margin-bottom: 0 !important;
+    line-height: unset;
+  }
+  .header {
+    border-bottom: 0.3px solid #bfc0c2;
+    padding: 0;
+    padding-bottom: 17px;
+    margin-bottom: 24px;
+
+    span:last-of-type {
+      font-size: 16px;
+      color: #4c4d4e;
+    }
+  }
+
+  .main-category {
+    border-radius: 8px;
+    border: 0.5px solid #eaecf1;
+    padding: 18px 20px;
+    width: 512px;
+    height: 56px;
+    margin: 0 auto;
+    @media (max-width:767px){
+      width: 326px;
+    }
+    .light-text {
+      font-size: 14px;
+      color: #a8a9ab;
+    }
+
+    .black-text {
+      font-size: 14px;
+      color: #4c4d4e;
+      margin-right: 14px;
+    }
+
+    .green-text {
+      font-size: 12px;
+      color: #7fd2bc;
+      margin-left: 3px;
+    }
+  }
+  .label-add-plant-input {
+    @include inputSelectLabel;
+    margin: 0 0 12px 0;
+    height: unset;
+    text-align: right;
+  }
+ .iconAddPicText{
+   font-size: 12px;
+ }
+  .add-plant-select-input {
+    @include inputSelect;
+  }
+
+  .label-add-farm-input {
+    @include labelInput;
+    margin: 0;
+    margin-top: 34px;
+    text-align: right;
+  }
+
+  .add-farm-input {
+    height: 48px;
+    padding: 10px;
+    border-radius: 8px;
+    border: solid 1px #eaecf1;
+    background-color: #f5f6f8;
+  }
+
+  .HerbalAdviceText {
+    font-weight: normal;
+    font-size: 14px;
+    color: #4c4d4e;
+    margin:0 0 12px 0 ;
+
+  }
+
+  .HerbalAdviceSubText {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    color: #a8a9ab;
+    margin-bottom: 60px;
+  }
+  .submit-btn{
+    width: 214px;
+    height: 56px;
+    border-radius: 8px;
+    background: #29bb89;
+    box-shadow: 0px 6px 12px rgba(127, 210, 188, 0.4);
+    font-size: 16px;
+    color: #fff;
+    margin-top: 48px;
+  }
+  .price{
+    margin-bottom: 0;
+  }
+  .price input{
+    border: none;
+    background-color: transparent;
+  }
+  .price input:focus-visible{
+    outline: none;
+  }
+  .price span{
+    font-size: 14px;
+    color: #bfc0c2;
+  }
+}
+.success-box{
+  font-family: iranyekan, serif;
+  direction: rtl;
+  margin: 0 100px;
+  @include sectionBoxStyle;
+  padding: 58px 0 84px 0;
+  @media (max-width:767px){
+    margin: 0 16px;
+    padding: 14px 16px 56px 16px;
+  }
+  .success-text{
+    font-size: 18px;
+    color: #4c4d4e;
+    margin: 37px;
+  }
+  .success-img{
+    margin-bottom: 81px;
+  }
+  .green-text{
+    font-size: 12px;
+    color: #7fd2bc;
+  }
+  .gray-text{
+    font-size: 12px;
+    color: #a8a9ab;
+    margin-right: 67px;
+    @media (max-width:767px){
+      margin-right: 20px;
+    }
+  }
+}
+

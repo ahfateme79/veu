@@ -1,0 +1,56 @@
+@import "src/styles/mixins/mixins";
+
+.climate-the-region {
+  border-radius: 16px;
+  background: url("../../assets/icon/climate-the-region.png") no-repeat;
+  color: #fff;
+  height: 189px;
+  background-size: cover;
+  direction: rtl;
+  @include fontNormal;
+  padding: 19px 24px;
+  @media (max-width: 767px) {
+    margin-bottom: 16px !important;
+  }
+
+  .climate-text {
+    font-size: 12px;
+    width: max-content;
+  }
+
+  .climate-title {
+    font-size: 14px;
+    @include fontNormal;
+    color: #fff;
+    margin-bottom: 37px;
+  }
+
+  .weather-icon {
+    width: 28.73px;
+    height: 23.46px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+
+  .climate-text {
+    font-size: 12px;
+    @include fontNormal;
+    color: #fff;
+  }
+
+  .climate-the-region-style {
+    gap: 42px;
+    @media (max-width: 767px) {
+      gap: 34px;
+    }
+  }
+
+  .precipitation-text {
+    direction: rtl;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 7px;
+  }
+}
+
+

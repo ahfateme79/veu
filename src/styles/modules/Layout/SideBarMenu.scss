@@ -1,0 +1,105 @@
+@import "src/styles/mixins/mixins";
+
+.sideBarMenuLayout {
+  width: 185px;
+  height: 870px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 2px 20px rgb(215 216 217 / 20%);
+  padding: 21px 24px;
+  @media (max-width: 768px) {
+    width: unset;
+    //height: 100vh;
+    border-radius: unset;
+    background: unsetf;
+    box-shadow: unset;
+  }
+
+  .border-top {
+    border-top: 0.3px solid #d7d8d9;
+    padding-top: 20px;;
+  }
+
+  .sideBar-nav-items {
+    .sideBar-nav-item {
+      @include pointerClass;
+      font-family: iranyekan, serif;
+      font-size: 14px;
+      @include fontNormal;
+      text-align: right;
+      color: #4c4d4e;
+      display: block;
+      padding: 15px 9px;
+      @media (max-width: 767px) {
+        padding: 20px 0px;
+      }
+    }
+
+    .homeIcon {
+      background-image: url("../assets/icon/Home.png");
+      @include IconStyle2;
+    }
+
+    .LightHomeIcon {
+      background-image: url("../assets/icon/LightHome.png");
+      @include IconStyle2;
+    }
+
+    .meteorologyIcon {
+      background-image: url("../assets/icon/drop.png");
+      @include IconStyle;
+    }
+
+    .LightMeteorologyIcon {
+      background-image: url("../assets/icon/LightDrop.png");
+      @include IconStyle;
+    }
+
+    .SubscriptionIcon {
+      background-image: url("../assets/icon/medal.png");
+      @include IconStyle;
+    }
+
+    .LightSubscriptionIcon {
+      background-image: url("../assets/icon/LightMedal.png");
+      @include IconStyle;
+    }
+
+    .conversationIcon {
+      background-image: url("../assets/icon/Chat.png");
+      @include IconStyle2;
+    }
+
+    .LightConversationIcon {
+      background-image: url("../assets/icon/LightChat.png");
+      @include IconStyle2;
+    }
+
+    .StoreIcon {
+      background-image: url("../assets/icon/Bag.png");
+      @include IconStyle2;
+    }
+
+    .LightStoreIcon {
+      background-image: url("../assets/icon/LightMedal.png");
+      @include IconStyle2;
+    }
+
+    .ArticlesIcon {
+      background-image: url("../assets/icon/majale.png");
+      @include IconStyle2;
+    }
+
+    .LightArticlesIcon {
+      background-image: url("../assets/icon/LightMajale.png");
+      @include IconStyle2;
+    }
+
+    .active {
+      background: #29bb89;
+      box-shadow: 0 6px 12px 0 rgba(127, 210, 188, 0.4);
+      border-radius: 8px;
+      color: white;
+    }
+  }
+}

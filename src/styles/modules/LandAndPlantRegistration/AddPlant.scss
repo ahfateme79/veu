@@ -1,0 +1,165 @@
+@import "src/styles/mixins/mixins";
+
+.add-plant {
+  direction: rtl;
+  margin-bottom: 83px;
+  min-height: 706px;
+  .multiselect{
+    width: 100% !important;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 63px !important;
+  }
+
+  .ol-viewport {
+    border-radius: 18px;
+  }
+
+  form {
+    margin-top: 34px;
+    @media (max-width: 767px) {
+      .row {
+        margin: 0;
+      }
+    }
+  }
+
+  .map {
+    margin-bottom: 64px;
+  }
+
+  .map-button {
+    position: absolute;
+    left: 2%;
+    top: 80%;
+
+    .map-button-content {
+      font-size: 14px;
+      @include fontNormal;
+      color: #fff;
+      padding: 12px 21px 11px 22px;
+      border-radius: 8px;
+      background-color: rgba(41, 187, 137, 0.85);
+    }
+  }
+
+  .map-tools {
+    position: absolute;
+    right: 4%;
+    top: 57%;
+
+    .map-icon {
+      width: 30px;
+      height: 30px;
+      padding: 5px 5.5px 5.5px 8px;
+      border-radius: 6px;
+      background-color: #fff;
+      margin-top: 5px;
+    }
+  }
+
+  padding: 24px 24px 65px;
+  border-radius: 20px;
+  background-color: #fff;
+
+  .add-plant-title {
+    font-family: iranyekan, serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #151617;
+    text-decoration: none;
+  }
+
+  .label-add-plant-input {
+    @include inputSelectLabel;
+  }
+
+  .add-plant-select-input {
+    @include inputSelect;
+  }
+
+  .map-title {
+    font-family: iranyekan, serif;
+    font-size: 14px;
+    @include fontNormal;
+    color: #4c4d4e;
+  }
+
+  .map {
+    border-radius: 18px;
+    height: 450px;
+    width: 100%;
+  }
+
+  .add-plant-button {
+    padding: 14px 65px;
+    border-radius: 8px;
+    background-color: #29bb89;;
+  }
+
+  .multiselect__tags {
+    margin: 8px 0 0;
+    //padding: 14px 8px 13px;
+    border-radius: 8px;
+    border: solid 1px #eaecf1;
+    background-color: #f5f6f8;
+
+    &::placeholder {
+      margin: 0;
+      font-family: IRANYekan, serif;
+      font-size: 12px;
+      @include fontNormal;
+      color: #bfc0c2;
+    }
+
+    .multiselect__input {
+      background: #f5f6f8;
+    }
+
+    .multiselect__single {
+      background: #f5f6f8;
+    }
+  }
+  .row-selection-section{
+    margin-top: 102px;
+    span:first-of-type{
+      font-size: 16px;
+      color: #4c4d4e;
+      margin-bottom: 53px;
+    }
+    .row-selection-btns{
+      div:first-of-type{
+        width: 160px;
+        height: 56px;
+        border-radius: 8px;
+        background: #29bb89;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+      }
+      div:last-of-type{
+        width: 160px;
+        height: 56px;
+        border-radius: 8px;
+        background: transparent;
+        border: 0.6px solid #848688;
+        font-size: 16px;
+        color: #848688;
+        cursor: pointer;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 576px) {
+  .add-plant {
+    .map-tools {
+      right: 8%;
+    }
+  }
+}

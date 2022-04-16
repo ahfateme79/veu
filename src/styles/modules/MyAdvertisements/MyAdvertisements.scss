@@ -1,0 +1,92 @@
+@import "src/styles/mixins/mixins";
+.MyAdvertisements{
+  font-family: iranyekan, serif;
+  direction: rtl;
+  @include sectionBoxStyle;
+  padding: 12px 24px 156px 24px;
+  @media (max-width: 767px){
+    margin: 0 16px;
+    margin-bottom: 66px;
+    padding: 14px 16px 214px 16px;
+  }
+  .header{
+    padding-bottom: 12px;
+    margin-bottom: 32px;
+    @media (max-width:767px){
+      margin-bottom: 16px;
+    }
+    span:first-of-type{
+      font-size: 16px;
+      color: #4c4d4e;
+    }
+  }
+  .adv-box{
+    padding-bottom: 32px;
+    border-bottom: 0.3px solid #bfc0c2;
+    margin-bottom: 32px;
+    @media (max-width: 767px){
+      margin-bottom: 19px;
+      margin-bottom: 16px;
+    }
+    .adv-img{
+      width: 110px;
+      height: 110px;
+      padding: 12px;
+      margin-left: 16px;
+      border-radius: 12px;
+      background: #fff;
+      border: 0.5px solid #a8a9ab;
+      @media (max-width: 767px){
+        width: 80px;
+        height: 80px;
+        margin-left: 8px;
+      }
+      img{
+        object-fit: cover;
+      }
+    }
+    .adv-name{
+      font-size: 16px;
+      color: #151617;
+    }
+    .adv-price{
+      @media (max-width: 767px){
+        margin-bottom: 36px;
+        margin-top: 24px;
+      }
+      span:first-of-type{
+        font-size: 16px;
+        color: #6c6e70;
+      }
+      span:nth-child(2){
+        font-size: 14px;
+        color: #29bb89;
+      }
+      span:last-of-type{
+        font-size: 12px;
+        color: #151617;
+      }
+    }
+    .date{
+      font-size: 14px;
+      color: #a8a9ab;
+      margin-bottom: 0 !important;
+    }
+    .edit-delete{
+      font-size: 12px;
+      color: #919294;
+    }
+  }
+  .adv-add-btn{
+    width: 130px;
+    height: 48px;
+    border-radius: 8px;
+    background: #29bb89;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    @media (max-width: 767px){
+      margin-top: 80px;
+    }
+  }
+}

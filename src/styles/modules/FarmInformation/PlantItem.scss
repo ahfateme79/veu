@@ -1,0 +1,41 @@
+@import "src/styles/mixins/mixins";
+
+.plants {
+  padding: 16px 24px 39px;
+  border-radius: 16px;
+  border: solid 1px #eaecf1;
+  background-color: #f4f5f7;
+}
+
+.farm-information-title {
+  margin: 0 0 11.8px 6px;
+  font-family: iranyekan, serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4c4d4e;
+}
+
+.farm-information-data-title {
+  width: 150px;
+  height: 40px;
+  margin: 0 4.2px 0 0;
+  font-family: iranyekan, serif;
+  font-size: 14px;
+  @include fontNormal;
+  text-align: center;
+  color: #919294;
+}
+
+.farm-information-data-box {
+  width: 138px;
+  height: 40px;
+  margin: 8px 0 0 24px;
+  padding: 8px 32px 7px;
+  border-radius: 6px;
+  background-color: #fff;
+}

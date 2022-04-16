@@ -1,0 +1,124 @@
+@import "src/styles/mixins/mixins";
+
+.add-farm {
+  @include sectionBoxStyle;
+  direction: rtl;
+  margin-bottom: 53px;
+  @media (max-width: 767px) {
+    margin-bottom: 131px !important;
+  }
+}
+.ol-viewport {
+  border-radius: 18px;
+}
+
+.map-input-box {
+  position: absolute;
+  left: 20%;
+  top: 12%;
+
+  .map-input-box-content {
+    margin: 0 252px 170px 126px;
+    padding: 12px 8px 12px 293px;
+    border-radius: 8px;
+    border: solid 1px #eaecf1;
+    background-color: #fff;
+
+    &::placeholder {
+      font-family: iranyekan, "Font Awesome 5 Brands", serif;
+      font-size: 12px;
+      @include fontNormal;
+      color: #a8a9ab;
+    }
+  }
+}
+
+.map-button {
+  position: absolute;
+  left: 2%;
+  top: 80%;
+
+  .map-button-content {
+    font-family: iranyekan, serif;
+    font-size: 14px;
+    @include fontNormal;
+    color: #fff;
+    padding: 12px 21px 11px 22px;
+    border-radius: 8px;
+    background-color: rgba(41, 187, 137, 0.85);
+
+  }
+}
+
+.map-tools {
+  position: absolute;
+  right: 4%;
+  top: 57%;
+
+  .map-icon {
+    width: 30px;
+    height: 30px;
+    padding: 5px 5.5px 5.5px 8px;
+    border-radius: 6px;
+    background-color: #fff;
+    margin-top: 5px;
+  }
+}
+
+
+.add-farm-title {
+  font-size: 16px;
+  color: #151617;
+  text-decoration: none;
+}
+
+.label-add-farm-input {
+  @include labelInput;
+  margin: 0;
+  margin-top: 34px;
+  text-align: right;
+}
+
+.add-farm-input {
+  width: 512px;
+  height: 48px;
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  border: solid 1px #eaecf1;
+  background-color: #f5f6f8;
+}
+
+@media (max-width: 576px) {
+  .add-farm-input {
+    width: 326px;
+    height: 48px;
+    border-radius: 8px;
+    background: #f5f6f8;
+    border: 0.5px solid #eaecf1;
+
+  }
+  .map-tools {
+    right: 8%;
+  }
+}
+
+.map-title {
+  font-size: 14px;
+  @include fontNormal;
+  color: #4c4d4e;
+}
+
+.map {
+  border-radius: 18px;
+  height: 450px;
+  width: 100%;
+}
+
+.add-farm-button {
+  padding: 14px 27px 14px 28px;
+  border-radius: 8px;
+  background-color: #29bb89;
+  margin-top: 72px;
+  font-size: 16px;
+}

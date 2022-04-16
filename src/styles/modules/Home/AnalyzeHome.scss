@@ -1,0 +1,311 @@
+@import "src/styles/mixins/mixins";
+
+.analyze-home {
+  font-family: iranyekan, serif;
+  min-height: 500px;
+  @include sectionBoxStyle;
+  padding: 26px 26px 185px 26px;
+  margin-top: 31px;
+  margin-bottom: 31px;
+  @media (max-width: 767px) {
+    padding: 16px 0px 66px 0px;
+  }
+  .map-wrapper{
+    position: relative;
+    .map {
+      border-radius: 18px;
+      height: 450px;
+      width: 100%;
+      margin-bottom: 41px;
+      @media ( max-width:767px){
+        width: 326px;
+        height: 340px;
+      }
+    }
+    .tools-wrapper {
+      position: absolute;
+      top: 420px;
+      right: 30px;
+      @media screen and (max-width:768px){
+        top: 320px;
+      }
+    }
+    .manage-layers {
+      position: absolute;
+      top: 16px;
+      width: 127px;
+      height: 130px;
+      right: 10px;
+      background: rgba(255,255,255,0.3);
+      border-radius: 6px;
+      input{
+        float: right;
+        margin-left: 5px;
+      }
+      .form-check{
+        padding-left: unset;
+        width: 106px;
+        text-align: right;
+      }
+
+      label{
+        color: #fff;
+        font-size: 11px;
+      }
+    }
+  }
+  .with-margin{
+    @media (max-width:767px){
+      margin: 0 16px;
+    }
+  }
+
+  .margin-top-50 {
+    margin-top: 50px;
+  }
+
+  .margin-16-at-mobile {
+    @media (max-width: 767px) {
+      margin: 0 16px;
+    }
+  }
+
+  .add-plant-btn {
+    padding: 16px 48px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 94px;
+    border-radius: 8px;
+    background: #29bb89;
+
+  }
+
+  .padding-33 {
+    padding: 0 33px;
+    @media (max-width: 767px) {
+      padding: 0 20px;
+    }
+  }
+
+  .margin-bottom-46 {
+    margin-bottom: 46px;
+  }
+
+  .border-left {
+    border-left: 1px solid #e6e6e6;
+    padding: 0 37px 0 51px;
+  }
+
+  .margin-bottom-18 {
+    margin-bottom: 18px;
+  }
+
+  .analyze-tabs {
+    border-radius: 8px;
+    background-color: #ebf8f5;
+
+    .analyze-tab {
+      font-size: 14px;
+      color: #4c4d4e;
+      cursor: pointer;
+      padding: 14px 40px;
+      @media (max-width: 767px) {
+        padding: 10px;
+        font-size: 11px;
+      }
+    }
+
+    .activeTab {
+      padding: 14px 40px;
+      border-radius: 8px;
+      background-color: #29bb89;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      margin: 4px;
+      @media (max-width: 767px) {
+        padding: 10px;
+        font-size: 11px;
+      }
+    }
+  }
+
+  .ProductAnalysisHomeTabs {
+    border-bottom: 2px solid #a8a9ab;
+    margin-top: 41px;
+    margin-bottom: 41px;
+    position: relative;
+    @media (max-width: 767px) {
+      margin-top: 34px;
+      margin-bottom: 34px;
+    }
+
+    .ProductAnalysisHomeTab {
+      font-size: 13px;
+      @include fontNormal;
+      text-align: left;
+      color: #4c4d4e;
+      padding: 20px 45px;
+    }
+
+    .activeTab {
+      font-size: 13px;
+      text-align: left;
+      color: #29bb89;
+      border-radius: 0;
+
+      &:after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        background-color: #29bb89;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        z-index: 1;
+      }
+
+    }
+  }
+
+  .dateReport {
+    padding: 8px 11px 31px 11px;
+    border-radius: 16px;
+    background-color: #f5f6f8;
+    height: 261px !important;
+    @media (max-width: 767px){
+      height: 209px;
+    }
+    .dateReport-tab {
+      padding: 4px;
+      border-radius: 8px;
+      background-color: #fff;
+      margin-bottom: 30px;
+      overflow-x: auto;
+      @media (max-width: 767px) {
+        background-color: unset;
+        padding: 12px;
+        margin-bottom: 18px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: 0.3px solid #bfc0c2;
+        gap: 10px;
+
+      }
+      @include fontNormal;
+
+      .dateReport-tab-title {
+        direction: rtl;
+        font-size: 13px;
+        color: #4c4d4e;
+        @include fontNormal;
+        padding: 14px 20px;
+        cursor: pointer;
+      }
+
+      .dateReport-tab-title-active {
+        font-size: 13px;
+        border-radius: 8px;
+        background-color: #29bb89;
+        color: #fff;
+        @media (max-width: 767px) {
+          padding: 11px;
+        }
+      }
+    }
+  }
+
+  .analyze-home-button {
+    margin: 45px auto;
+    padding: 12px 24.3px 11px 24px;
+    border-radius: 8px;
+    background-color: #29bb89;
+    color: #fff;
+  }
+
+  .timeTabText {
+    font-family: iranyekan, serif;
+    font-weight: normal;
+    font-size: 13px;
+    color: #4c4d4e;
+  }
+
+  .timeTabValueMax {
+    font-family: iranyekan, serif;
+    font-weight: normal;
+    font-size: 28px;
+    text-align: left;
+    color: #29bb89;
+    margin-left: 8px;
+
+  }
+
+  .timeTabValueMin {
+    font-family: iranyekan, serif;
+    font-weight: normal;
+    font-size: 28px;
+    text-align: left;
+    color: #ec4b4b;
+    margin-left: 8px;
+  }
+
+  .timeTabValue {
+    font-family: iranyekan, serif;
+    font-weight: normal;
+    font-size: 28px;
+    color: #4c4d4e;
+  }
+
+  .timeTabValueText {
+    font-family: iranyekan, serif;
+    font-weight: normal;
+    font-size: 13px;
+    text-align: center;
+    color: #4c4d4e;
+    padding: 5px 8px !important;
+  }
+
+
+  .map-tools {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    .legend-wrapper{
+      width: 35px;
+      height: 188px;
+      background-color: #fff;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 16px;
+      .max-min{
+        font-size: 8px;
+        color: #4c4d4e;
+      }
+      .map-legend{
+        width: 27px;
+        height: 154px;
+        border-radius: 10px;
+      }
+    }
+    .select-date-label{
+      width: 201px;
+      height: 27px;
+      padding: 4px;
+      font-size: 12px;
+      color: #4c4d4e;
+      background-color: #fff;
+      border-radius: 8px;
+      margin-bottom: 4px;
+      font-family: iranyekan, serif;
+    }
+  }
+  .ol-viewport {
+    border-radius: 18px;
+  }
+
+}

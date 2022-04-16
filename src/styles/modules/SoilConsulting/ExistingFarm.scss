@@ -1,0 +1,168 @@
+@import "src/styles/mixins/mixins";
+
+.existing-farm {
+  @include sectionBoxStyle;
+  padding: 16px 24px 24px 32px;
+  font-family: iranyekan, serif;
+  margin-bottom: 32px;
+  @media (max-width: 767px) {
+    padding-left: 0;
+    margin-bottom: 16px;
+    min-height: 184px;
+  }
+  @include fontNormal;
+
+  .overflow-x-scroll {
+    overflow-x: auto;
+    gap: 24px;
+    padding-left: 10px;
+    @media (max-width: 767px) {
+      gap: 16px;
+    }
+  }
+
+  .overflow {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .add-new-btn-txt {
+    font-size: 14px;
+    color: #4c4d4e;
+    margin-top: 14px;
+  }
+
+  .plusIcon {
+    background-image: url("../assets/icon/LightPlus.png");
+    margin-left: 14px;
+    @include IconStyle2;
+    width: 18px;
+    height: 18px;
+    @media (max-width: 767px) {
+      margin-left: 0px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .list-existing-farm {
+    background: transparent;
+    border-bottom: 2px solid #d7d8d9;
+    position: relative;
+    font-weight: normal;
+    font-size: 14px;
+    color: #4c4d4e;
+    text-align: center;
+
+  }
+
+  .existing-farm-box {
+    //width: 150px;
+    height: 72px;
+    border-radius: 8px;
+    border: solid 1px #f3f3f3;
+    @media (max-width: 767px) {
+      //width: 130px;
+      height: 67px;
+    }
+  }
+
+  .add-item-icon {
+    margin: 0 auto;
+  }
+
+  .add-new-farm {
+    padding: 12px 20px 9px;
+    border-radius: 8px;
+    border: solid 1px #f3f3f3;
+  }
+
+  .ActivePlant {
+    border: solid 0.6px #29bb89;
+
+    .name, .existing-farm-value {
+      color: #29bb89 !important;
+    }
+  }
+
+  .existing-farm-title-new-button {
+    font-size: 14px;
+    color: #4c4d4e;
+    text-decoration: none;
+    font-weight: normal;
+    padding: 8px 8px;
+    cursor: pointer;
+    width: max-content;
+    margin-left: 10px;
+  }
+
+  .existing-farm-title {
+    font-size: 14px;
+    color: #4c4d4e;
+    text-decoration: none;
+    font-weight: normal;
+    // padding: 0 60px;
+    cursor: pointer;
+
+    .existing-farm-title-value {
+      font-weight: normal;
+      font-size: 12px;
+      color: #a8a9ab;
+      margin-top: 7px;
+      padding-bottom: 5px;
+    }
+  }
+
+  .existing-farm-title.activeTab {
+    &:after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      background-color: #29bb89;
+      left: 0;
+      right: 0;
+      bottom: 0px;
+      z-index: 1;
+    }
+
+    color: #29bb89;
+    position: relative;
+    @include fontNormal;
+    font-size: 14px;
+
+    button:focus {
+      outline: none;
+    }
+
+  }
+
+  .existing-farm-value {
+    font-size: 12px;
+    color: #a8a9ab;
+
+    .name {
+      font-size: 14px;
+      color: #4c4d4e;
+      margin-bottom: 14px;
+    }
+  }
+
+  .existing-farm-add-new {
+    border-radius: 8px;
+    border: solid 1px #c9c9c9;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 576px) {
+  .existing-farm {
+    border-radius: 0;
+
+    .existing-farm-add-new {
+      border: none;
+    }
+  }
+}
+
+

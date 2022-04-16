@@ -1,0 +1,53 @@
+@import "src/styles/mixins/mixins";
+
+.messages {
+  font-family: iranyekan, serif;
+  @include sectionBoxStyle;
+  direction: rtl;
+
+  .empty {
+    height: 200px;
+  }
+
+  .header {
+    font-weight: 500;
+    font-size: 16px;
+    color: #4c4d4e;
+    padding-bottom: 17px;
+    border-bottom: 0.3px solid #bfc0c2;
+    text-align: right;
+    margin-bottom: 32px;
+  }
+.unreadMessage{
+  border-right: 3px solid red;
+}
+  .message {
+    padding: 32px 26px 32px 0;
+    border-bottom: 0.3px solid #bfc0c2;
+    cursor: pointer;
+    .text {
+      font-weight: normal;
+      font-size: 14px;
+      color: #151617;
+      position: relative;
+    }
+
+    .text::before {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: #bae9d9;
+      border-radius: 50%;
+      position: absolute;
+      top: 5px;
+      right: -16px;
+    }
+
+    .date {
+      font-weight: normal;
+      font-size: 14px;
+      color: #a8a9ab;
+    }
+  }
+}

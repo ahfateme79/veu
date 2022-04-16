@@ -1,0 +1,56 @@
+@import "src/styles/mixins/mixins";
+
+.margin-top {
+  margin-top: 40px;
+}
+
+.farm-setting span {
+  color: #7fd2bc;
+  font-size: 12px;
+  margin-right: 3px;
+  cursor: pointer;
+}
+
+.empty-farm-item {
+  height: 189px;
+}
+
+.farm-item {
+  padding: 20px 22px 37px 22px;
+  border-radius: 16px;
+  background-color: #fff;
+  min-height: 191.77px;
+  @media (max-width: 767px) {
+    margin-bottom: 16px;
+  }
+
+  .farm-item-first-title {
+    font-size: 16px;
+    color: #4c4d4e;
+  }
+
+  .farm-item-title {
+    font-size: 14px;
+    @include fontNormal;
+    color: #919294;
+    margin-bottom: 11px;
+    @media (max-width: 767px) {
+      font-size: 13px;
+    }
+  }
+  .farm-item-value {
+    border-radius: 6px;
+    background-color: #f4f5f7;
+    padding: 5px;
+    font-size: 14px;
+    color: #4c4d4e;
+    height: 40px;
+    width: 120px;
+    @media (max-width: 767px) {
+      padding: 9px 5px;
+      height: 32px;
+      width: 98px;
+      font-size: 11px;
+    }
+  }
+}

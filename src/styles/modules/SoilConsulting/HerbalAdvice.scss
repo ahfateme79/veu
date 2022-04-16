@@ -1,0 +1,221 @@
+@import "src/styles/mixins/mixins";
+
+.HerbalAdvice {
+  margin-top: 50px;
+  min-height: 280px;
+  @media (max-width: 767px){
+    margin: 50px 16px 0 16px;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 3%;
+    @media (max-width:767px){
+      grid-template-columns: 1fr;
+    }
+  }
+  .examination-success-image {
+    background-image: url("../../assets/icon/success.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .examination-empty-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    color: #4c4d4e;
+    margin-bottom: 15px;
+  }
+
+  .examination-empty-description {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    color: #a8a9ab;
+    margin-bottom: 60px;
+  }
+
+  .examination-back {
+    font-size: 12px;
+    @include fontNormal;
+    color: #7fd2bc;
+    cursor: pointer;
+  }
+
+  .HerbalAdvice-textarea {
+    resize: none;
+    padding: 10px;
+    height: 171px;
+    border-radius: 16px;
+    border: solid 1px #f3f3f3;
+    background-color: #f5f6f8;
+  }
+
+  .HerbalAdviceTitle {
+    font-weight: 500;
+    font-size: 16px;
+    color: #4c4d4e;
+    margin-bottom: 15px;
+
+  }
+
+  .HerbalAdviceLink {
+    background: transparent;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: left;
+    color: #7fd2bc;
+    margin: 16px 0;
+  }
+
+  .HerbalAdviceInput {
+    border-radius: 16px;
+    background: #f5f6f8;
+    border: 1px solid #f3f3f3;
+    width: 70%;
+  }
+
+  .preview {
+    width: 110px;
+    height: 110px;
+    border-radius: 8px;
+    @media (max-width:767px){
+      width: 80px;
+      height: 80px;
+    }
+    img{
+      border-radius: 8px;
+    }
+  }
+
+  .cameraIcon {
+    background-image: url("../../assets/icon/Camera.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+  }
+
+  .iconAddPic {
+    padding: 20px;
+    border-radius: 16px;
+    background: #f5f6f8;
+    border: 1px solid #f3f3f3;
+    cursor: pointer;
+
+    .iconAddPicText {
+      font-weight: normal;
+      font-size: 14px;
+      color: #a8a9ab;
+      padding-top: 16px;
+
+    }
+
+  }
+
+  .HerbalAdviceImageInput {
+    width: 110px;
+    height: 110px;
+    border-radius: 16px;
+    background: #f5f6f8;
+    border: 1px solid #f3f3f3;
+
+  }
+
+  .HerbalAdviceText {
+    font-weight: normal;
+    font-size: 14px;
+    color: #4c4d4e;
+    margin: 12px 0;
+
+  }
+
+  .HerbalAdviceSubText {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    color: #a8a9ab;
+    margin-bottom: 60px;
+  }
+
+  .privacy {
+    font-family: iranyekan, serif;
+    font-weight: normal;
+    font-size: 12px;
+    color: #4c4d4e;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.83;
+    letter-spacing: normal;
+    margin: 24px 0;
+
+    .privacy-text {
+      color: #29bb89;
+      cursor: pointer;
+    }
+  }
+
+  .HerbalAdviceSubmit {
+    padding: 12px 24.3px 11px 24px;
+    border-radius: 8px;
+    background-color: #29bb89;
+    color: #fff;
+
+
+  }
+
+  .plant-examination-reRequest {
+    width: 220px;
+    height: 56px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid #29bb89;
+    font-size: 14px;
+    color: #29bb89;
+    padding: 18px 10px;
+    margin-top: 64px;
+  }
+
+  .back-to-plant-consulting {
+    padding: 30px 23px;
+    border-radius: 8px;
+    border: 1px solid #e5e8ec;
+
+    .link {
+      font-size: 14px;
+      color: #29bb89;
+    }
+
+    .message {
+      font-size: 14px;
+      color: #4c4d4e;
+    }
+
+  }
+
+  .img-delete-btn {
+    position: relative;
+    background-color: #D27F85;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    width: 110px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-top: -28px;
+    @media (max-width:767px){
+      width: 80px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import "src/styles/mixins/mixins";
+
+.add-green-house-plant-box {
+  @include sectionBoxStyle;
+  padding: 24px 24px 41px 24px;
+  font-family: iranyekan, serif;
+  .multiselect{
+    width: 100% !important;
+  }
+  margin-bottom: 97px;
+  direction: rtl;
+  @media (max-width: 767px) {
+    padding: 14px 16px 24px 16px;
+    margin-bottom: 72px !important;
+    .row {
+      margin: 0;
+    }
+  }
+
+  .header {
+    padding: 0;
+    padding-bottom: 22px;
+    border-bottom: 0.3px solid #bfc0c2;
+    margin-bottom: 24px;
+    @media (max-width: 767px) {
+      padding-bottom: 13px;
+      margin-bottom: 18px;
+    }
+
+    .txt {
+      font-size: 16px;
+      color: #151617;
+    }
+  }
+
+  .add-plant-select-input {
+    @include inputSelect;
+    margin-top: 0px;
+  }
+
+  .submit-btn {
+    height: 56px;
+    width: 180px;
+    border-radius: 8px;
+    background: #29bb89;
+    padding: 16px;
+    color: #fff;
+    margin-top: 190px;
+  }
+
+  .label-add-plant-input {
+    margin-bottom: 12px;
+  }
+}

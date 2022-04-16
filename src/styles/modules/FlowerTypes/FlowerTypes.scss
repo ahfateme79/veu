@@ -1,0 +1,148 @@
+@import "src/styles/mixins/mixins";
+
+.house-plants-box {
+  @include sectionBoxStyle;
+  padding: 24px 24px 41px 24px;
+  font-family: iranyekan, serif;
+  margin-bottom: 97px;
+  direction: rtl;
+  @media (max-width: 767px) {
+    padding: 14px 16px 24px 16px;
+  }
+
+  .header {
+    padding: 0;
+    padding-bottom: 22px;
+    border-bottom: 0.3px solid #bfc0c2;
+    margin-bottom: 24px;
+    @media (max-width: 767px) {
+      padding-bottom: 13px;
+      margin-bottom: 18px;
+    }
+
+    .txt {
+      font-size: 16px;
+      color: #151617;
+    }
+  }
+
+  .search-bar-section {
+    margin-bottom: 29px;
+    @media (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+
+    .text {
+      font-size: 14px;
+      color: #4c4d4e;
+      @media (max-width: 767px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .search-bar-wrapper {
+      width: 507px;
+      height: 48px;
+      @media (max-width: 767px) {
+        width: 100%;
+        margin-right: 0;
+      }
+      border-radius: 8px;
+      background: #f5f6f8;
+      border: 0.5px solid #eaecf1;
+      padding: 14px 8px;
+      margin-right: 24px;
+
+      .search-bar-input {
+        font-size: 14px;
+        color: #cbcdd1;
+        background-color: transparent;
+        border: none;
+        margin-right: 12px;
+
+        &:focus-visible {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .minimum-height {
+    min-height: 400px;
+    @media (max-width: 767px) {
+      min-height: 200px;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    border-bottom: 0.3px solid #bfc0c2;
+    padding-bottom: 40px;
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .house-plant-box {
+      height: 210px;
+      border-radius: 8px;
+      background: #f5f6f8;
+      border: 1px solid #eaecf1;
+      padding: 6px 6px 12px 6px;
+      cursor: pointer;
+
+      .house-plant-img {
+        width: 114px;
+        height: 163px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .house-plant-name {
+        font-size: 14px;
+        color: #4c4d4e;
+      }
+    }
+  }
+
+  .unknown-flower {
+    width: 180px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid #29bb89;
+    font-size: 14px;
+    color: #29bb89;
+    cursor: pointer;
+    @media (max-width: 767px) {
+      width: 167px;
+    }
+  }
+
+  .create-flower-type {
+    width: 158px;
+    height: 48px;
+    border-radius: 8px;
+    background: #eaecf1;
+    padding: 14px;
+    font-size: 14px;
+    color: #a8a9ab;
+    @media (max-width: 767px) {
+      width: 167px;
+    }
+  }
+
+  .stick-bottom-section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(transparent, #fff 30%);
+    height: 96px;
+    padding: 24px 16px;
+    margin: 0 16px;
+    z-index: 10;
+  }
+}

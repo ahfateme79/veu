@@ -1,0 +1,72 @@
+@import "../../mixins/mixins";
+
+.sign-up-form {
+  direction: rtl;
+  border-radius: 20px;
+  padding: 26px 24px 64px 24px;
+  background-color: #fff;
+  @media (max-width: 767px) {
+    margin-top: 26px;
+  }
+
+  .form {
+    margin-top: 31px;
+  }
+
+  .multiselect {
+    width: 100% !important;
+    margin: 12px 0px 0px 0px;
+
+    .multiselect__tags {
+      height: 48px;
+      background: #f5f6f8;
+      border-radius: 8px;
+      padding: 13px 10px;
+
+      &::placeholder {
+        margin: 0;
+        font-size: 12px;
+        @include fontNormal;
+        color: #bfc0c2;
+      }
+    }
+
+    .multiselect__select {
+      top: 5px;
+    }
+  }
+
+  .sign-up-form-title {
+    @include titleForm;
+    margin-bottom: 31px;
+  }
+
+  .label-text-input {
+    font-size: 14px;
+    color: #4c4d4e;
+    text-align: right;
+  }
+
+  .sign-up-form-text-input {
+    @include textFormInput;
+    margin: 12px 0 18px 0;
+    padding: 13px 10px;
+    margin-bottom: 0px;
+  }
+
+  .sign-up-form-select-input {
+    @include inputSelect;
+    padding: 16px;
+  }
+
+  .label-select-input {
+    @include inputSelectLabel;
+    text-align: right;
+    margin: 0;
+  }
+
+  .sign-up-form-submit-button {
+    @include submitButton;
+    margin-top: 39px;
+  }
+}

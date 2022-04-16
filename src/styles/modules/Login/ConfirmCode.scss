@@ -1,0 +1,73 @@
+@import "../../mixins/mixins";
+
+.confirm-code-page {
+  padding: 24px 0 0;
+  background-color: #f5f6f8;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  .pointer {
+    cursor: pointer;
+  }
+
+  .confirm-code-form-box {
+    padding-left: 172px;
+  }
+
+  .login-form-title {
+    @include titleForm;
+  }
+
+  .label-input {
+    @include labelInput;
+    margin: 0;
+    margin-top: 69px;
+    margin-bottom: 11px;
+  }
+
+  .login-form-text-input {
+    @include textFormInput;
+  }
+
+  .login-form-submit-button {
+    @include submitButton;
+  }
+
+  .theRules {
+    margin: 32px 10px 0;
+    font-family: iranyekan, serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.83;
+    letter-spacing: normal;
+    text-align: right;
+    color: #4c4d4e;
+
+    span {
+      color: #29bb89;
+    }
+  }
+
+  .sendingCodeNumber {
+    @include sendingCode;
+    text-align: right;
+
+  }
+
+  .sendingCodeNumberTimer {
+    @include sendingCode;
+    margin-top: 33px;
+  }
+}
+
+.confirm-code-page {
+  padding: 28px 0 0;
+  background-color: #f5f6f8;
+
+}
+
+.backButton {
+  margin-top: 17px;
+}

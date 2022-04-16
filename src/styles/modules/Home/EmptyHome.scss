@@ -1,0 +1,37 @@
+@import "src/styles/mixins/mixins";
+
+.emptyHome {
+  background-color: #fff;
+  padding-top: 40px;
+  padding-bottom: 74px;
+  border-radius: 20px;
+  @media (max-width: 767px) {
+    background-color: transparent;
+    padding-top: 0px;
+  }
+
+  .emptyHomeImage {
+    width: 478.2px;
+    height: 317px;
+    margin-bottom: 59px;
+    @media (max-width: 767px) {
+      width: 358px;
+      height: 237px;
+      margin-bottom: 83px;
+    }
+  }
+
+  .emptyHomeDescription {
+    font-size: 16px;
+    @include fontNormal;
+    color: #151617;
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
+  }
+
+  .emptyHomeButton {
+    @include submitButton;
+    margin-top: 53px;
+  }
+}

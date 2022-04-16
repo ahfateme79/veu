@@ -1,0 +1,34 @@
+.footer-div {
+  .left {
+    background-image: url("../../assets/icon/LeftMask.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 215px;
+    height: 80px;
+  }
+
+  .right {
+    background-image: url("../../assets/icon/RightMask.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 115px;
+    width: 313px;
+  }
+
+  @media (max-width: 576px) {
+    .right {
+      background-image: url("../../assets/icon/RightMask.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 145.23px;
+      height: 55.72px;
+    }
+    .left {
+      background-image: url("../../assets/icon/LeftMask.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 159.89px;
+      height: 61.25px;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+@mixin titleForm {
+  font-family: IRANYekan, serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #151617;
+}
+
+@mixin submitButton {
+  margin: 57px 0 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: solid 1px #eff1f5;
+  background-color: #29bb89;
+}
+
+@mixin textFormInput {
+  height: 48px;
+  margin: 8px 0 0;
+  border-radius: 8px;
+  border: solid 1px #eaecf1;
+  background-color: #f5f6f8;
+}
+
+@mixin labelInput {
+  margin: 55px 0 8px 0;
+  font-family: IRANYekan, serif;
+  font-size: 14px;
+  @include fontNormal;
+  text-align: left;
+  color: #4c4d4e;
+}
+
+@mixin sectionBoxStyle {
+  padding: 24px 24px 65px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+@mixin inputSelect {
+  margin: 8px 0 0;
+  padding: 8px 8px 9px;
+  border-radius: 8px;
+  border: solid 1px #eaecf1;
+  background-color: #f5f6f8;
+  &::placeholder {
+    margin: 0;
+    font-family: IRANYekan, serif;
+    font-size: 12px;
+    @include fontNormal;
+    color: #bfc0c2;
+  }
+}
+
+@mixin inputSelectLabel {
+  height: 25px;
+  margin: 8px 0 0 0;
+  font-family: IRANYekan, serif;
+  font-size: 14px;
+  @include fontNormal;
+  text-align: left;
+  color: #4c4d4e;
+}
+
+@mixin sendingCode {
+  font-family: iranyekan, serif;
+  font-size: 12px;
+  @include fontNormal;
+  text-align: center;
+  color: #a8a9ab;
+}
+
+@mixin fontNormal {
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+@mixin IconStyle {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 24px;
+}
+
+@mixin IconStyle2 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+@mixin pointerClass {
+  cursor: pointer;
+}
